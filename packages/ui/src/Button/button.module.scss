@@ -1,0 +1,28 @@
+@import "style/variables";
+@import "style/mixins";
+
+.button {
+  @include buttonColor(invert($primary, 100%), $primary);
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-width: 0.2rem;
+  border-style: solid;
+
+  &__secondary {
+    @include buttonColor(invert($secondary, 100%), $secondary);
+  }
+
+  &__warning {
+    @include buttonColor(invert($warning, 100%), $warning);
+  }
+
+  &__error {
+    @include buttonColor(invert($error, 100%), $error);
+  }
+
+  &__info {
+    @include buttonColor(invert($info, 100%), $info);
+  }
+}
