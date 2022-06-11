@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button } from "ui";
+import { Button } from '@my-namespace/ui';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -8,11 +8,26 @@ const App = () => {
     <>
       <Button>primary button test</Button>
       <Button type={'secondary'}>secondary button test</Button>
-      <Button type={'info'} onClick={() => { alert('Info button clicked!'); }}>Click me!</Button>
-      <br/>
-      <Button type={'warning'} onClick={() => { setCount(count + 1); }}>Count: { count }</Button>
+      <Button
+        type={'info'}
+        onClick={() => {
+          // eslint-disable-next-line no-alert
+          alert('Info button clicked!');
+        }}
+      >
+        Click me!
+      </Button>
+      <br />
+      <Button
+        type={'warning'}
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        Count: {count}
+      </Button>
     </>
   );
 };
 
-export default App
+export default App;

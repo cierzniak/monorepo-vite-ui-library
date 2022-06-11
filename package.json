@@ -16,7 +16,8 @@
     "concurrently": "^7.2.1",
     "cross-env": "^7.0.3",
     "prettier": "latest",
-    "turbo": "latest"
+    "turbo": "latest",
+    "typescript": "^4.7.3"
   },
   "engines": {
     "npm": ">=7.0.0",

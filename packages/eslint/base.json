@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc.json",
+  "root": true,
+  "env": {
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "xo", "xo-typescript/space", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "eqeqeq": ["error", "always"],
+    "linebreak-style": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "useTabs": false,
+        "endOfLine": "lf",
+        "printWidth": 120,
+        "trailingComma": "es5",
+        "semi": true,
+        "jsxSingleQuote": true,
+        "arrowParens": "always"
+      }
+    ],
+    "yoda": ["error", "always"]
+  },
+  "settings": {
+    "next": {
+      "rootDir": [
+        "apps/*/",
+        "packages/*/"
+      ]
+    }
+  }
+}

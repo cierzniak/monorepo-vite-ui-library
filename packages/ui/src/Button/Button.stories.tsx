@@ -19,7 +19,7 @@ export default {
           warning: 'Warning',
           error: 'Error',
           info: 'Info',
-        }
+        },
       },
       options: ['primary', 'secondary', 'warning', 'error', 'info'],
     },
@@ -36,21 +36,16 @@ const Template: Story<ButtonProps> = ({ children, type, onClick }) => (
 );
 
 export const Primary = Template.bind({});
-Primary.storyName = 'Primary';
 Primary.args = { children: 'Primary type button', type: 'primary' };
 
 export const Secondary = Template.bind({});
-Secondary.storyName = 'Secondary';
 Secondary.args = { children: 'Secondary type button', type: 'secondary' };
 
 export const Warning = Template.bind({});
-Warning.storyName = 'Warning';
 Warning.args = { children: 'Warning button', type: 'warning' };
 
 export const Error = Template.bind({});
-Error.storyName = 'Error';
 Error.args = { children: 'Error button', type: 'error' };
 
 export const Info = Template.bind({});
-Info.storyName = 'Info';
 Info.args = { children: 'Info button', type: 'info' };
