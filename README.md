@@ -9,6 +9,8 @@ Monorepo (Turborepo) with Next.js, React and Vite apps & Vite-based UI library w
 │   ├── react
 │   └── vite
 └── packages
+    ├── eslint
+    ├── stylelint
     └── ui
 ```
 
