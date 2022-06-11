@@ -1,5 +1,7 @@
-@mixin buttonColor($color, $background) {
+@use 'sass:color';
+
+@mixin button-color($color, $background) {
+  border-color: color.adjust($background, -5%);
   background-color: $background;
-  border-color: darken($background, 5%);
   color: $color;
 }

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/stylelintrc.json",
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss",
+    "stylelint-config-idiomatic-order"
+  ],
+  "rules": {
+    "color-hex-case": "upper",
+    "color-hex-length": "long",
+    "color-named": "never",
+    "declaration-block-trailing-semicolon": "always",
+    "declaration-colon-space-after": "always",
+    "declaration-colon-space-before": "never",
+    "font-weight-notation": "numeric",
+    "no-duplicate-selectors": true,
+    "string-quotes": "single"
+  }
+}

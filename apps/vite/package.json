@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite --port 3002",
     "build": "tsc && vite build",
-    "lint": "eslint src --fix"
+    "lint": "eslint src --fix && stylelint ./**/*.{,s}css --fix"
   },
   "dependencies": {
     "@my-namespace/ui": "*",
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@my-namespace/eslint-config": "*",
+    "@my-namespace/stylelint-config": "*",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",

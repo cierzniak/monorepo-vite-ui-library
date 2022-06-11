@@ -6,7 +6,7 @@
     "dev": "next dev --port 3000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix"
+    "lint": "next lint --fix && stylelint ./**/*.{,s}css --fix"
   },
   "dependencies": {
     "@my-namespace/ui": "*",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@my-namespace/eslint-config": "*",
+    "@my-namespace/stylelint-config": "*",
     "@types/node": "^17.0.41",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5"
