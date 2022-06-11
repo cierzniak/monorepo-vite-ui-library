@@ -11,7 +11,7 @@ export default defineConfig({
     libCss(),
   ],
   build: {
-    cssCodeSplit: true,
+    cssCodeSplit: false,
     lib: {
       entry: 'src/index.ts',
       name: 'UiLibrary',
